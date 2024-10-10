@@ -1,23 +1,21 @@
-# Express_Template
+# Certifico
 
 ## Overview
-The **Express_Template** is a basic setup of boilerplate code needed to build a scalable backend in express using the MERN stack.
+**Certifico** is a Certificate Verification System designed to streamline the management and retrieval of
+certificates for students. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), this system allows administrators to upload student data in Excel format, which is then processed and stored in a MongoDB database. Students can subsequently search for their certificates using unique certificate IDs, view their details, and download them.
 
 ## Features
 
-### Feature 1:
-- **Sub Feature 1:** Lorem Ipsum.
-- **Sub Feature 2:** Lorem Ipsum.
+### Admin Features:
+- **Excel Data Upload:** Admins can upload an Excel file containing student information, such as certificate ID, student name, internship domain, starting date, and ending date. The system processes the Excel data and stores it in a MongoDB database.
 
-### Feature 2:
-- **Sub Feature 1:** Lorem Ipsum.
-- **Sub Feature 1:** Lorem Ipsum.
-- **Sub Feature 1:** Lorem Ipsum.
-
+### Student Features:
+- **Certificate Retrieval:** Students can search for their certificates using a unique certificate ID. The system retrieves and displays the relevant certificate details, including the student’s name, internship domain, and the dates of the internship.
+- **Certificate Generation:** A certificate template with fields (student name, internship domain, and dates) is generated dynamically based on the search results.
+- **Download Option:** Students can download their certificate in a specified format (e.g., PDF) after viewing it.
 
 ### General Features:
 - **User Authentication:** Secure user registration and login system.
-- **Profile Management:** Create and update user profiles with personal data.
  
 ## Tech Stack
 
