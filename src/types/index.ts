@@ -1,3 +1,5 @@
+import { Types } from "mongoose";
+
 export enum UserRole {
     STUDENT = "student",
     ADMIN = "admin"
@@ -15,7 +17,21 @@ export interface IUser extends Base {
     password: string;
     email: string;
     role: UserRole;
-} 
+    certificates: Types.ObjectId[];
+    issued_certificates: Types.ObjectId[];
+}
+
+export interface ICertificate extends Base {
+    _id: string;
+    certificateId: Types.ObjectId;
+    issuedBy: Types.ObjectId;  
+    studentName: string;
+    internshipDomain: string;
+    internshipDetails: string;
+    startDate: Date; 
+    endDate: Date; 
+    awardedOn: Date;
+}
 
 export interface IUserLogin {
     email: string;
