@@ -1,13 +1,6 @@
-import { Types } from "mongoose";
-
 export enum UserRole {
-    USER = "user",
+    STUDENT = "student",
     ADMIN = "admin"
-}
-  
-export enum NotificationsStatus {
-    UNREAD = "unread",
-    READ = "read"
 }
 
 export interface Base {

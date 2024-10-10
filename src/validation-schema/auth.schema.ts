@@ -4,7 +4,7 @@ import { UserRole } from "../types";
 const signUpSchema = z.object({
   username: z.string().min(1, { message: "username cannot be empty" }),
   email: z.string().min(1, { message: "Email cannot be empty" }).email({message: "input a valid email"}),
-  role: z.enum([UserRole.ADMIN, UserRole.USER]).optional(),
+  role: z.enum([UserRole.ADMIN, UserRole.S]).optional(),
   password: z.string().min(1, { message: "password cannot be empty" }), 
 });
 
