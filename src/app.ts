@@ -4,6 +4,7 @@ import swaggerUi from "swagger-ui-express";
 import swaggerSpec from "./config/swaggerConfig";
 import { errorHandler, routeNotFound } from "./middleware";
 import { authRoute } from "./routes";
+import { Limiter } from "./utils";
 
 
 const app: Express = express();
@@ -22,7 +23,7 @@ app.use(
 );
 
 
-// app.use(Limiter);
+app.use(Limiter);
 app.use(express.json({ limit: "15mb" }));
 app.use(express.urlencoded({ limit: "15mb", extended: true }));
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
