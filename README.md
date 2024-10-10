@@ -28,7 +28,7 @@ certificates for students. Built using the MERN stack (MongoDB, Express.js, Reac
 
 Before you begin, ensure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/) (v14 or later)
+- [Node.js](https://nodejs.org/) (v18 or later)
 - [npm](https://www.npmjs.com/) (Node Package Manager, included with Node.js)
 - [Git](https://git-scm.com/)
 
